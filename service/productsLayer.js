@@ -30,10 +30,10 @@ exports.find = (req) => {
 
 exports.update = async (req) => {
 	
-	const {update} = req.body
+	const {products} = req.body
 	await db.product
 	.update(
-		update,
+		products,
 		{where: req.params}
 	)
 
