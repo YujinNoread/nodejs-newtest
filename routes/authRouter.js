@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router();
 const controller = require('../controllers/authContoller');
-const registerValidator = require('../Validators/RegisterValidator')
+const registerValidator = require('../validators/RegisterValidator')
 
 //localhost:5000/api/v1/auth
 

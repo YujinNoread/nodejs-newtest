@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();
 const controller = require('../controllers/productsController');
 const roleMiddleware = require('../middleware/roleMiddleware.js');
-const productValidator = require('../Validators/ProductValidator')
+const productValidator = require('../validators/ProductValidator')
 
 
 //localhost:5000/api/v1/products

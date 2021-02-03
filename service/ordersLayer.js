@@ -51,8 +51,6 @@ exports.add = async (req) => {
 	if(!isAdmin){
 		
 		for(let product of products){
-			console.log(product.id);
-			
 			dbProductsTest = await db.product.findOne({where: {id: product.id}})
 			if(!dbProductsTest){
 				return ({error: `productId = ${product.id} is not exist`})

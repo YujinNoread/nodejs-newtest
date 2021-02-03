@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();
 const controller = require('../controllers/categoriesController');
 const roleMiddleware = require('../middleware/roleMiddleware.js');
-const categoryValidator = require('../Validators/CategoryValidator');
+const categoryValidator = require('../validators/CategoryValidator');
 
 //localhost:5000/api/v1/products-categories
 
